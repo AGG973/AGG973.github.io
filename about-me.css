@@ -1,0 +1,425 @@
+/*to set the page into mobile view (same as the index page)*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%
+}
+
+body {
+  background-color: #fff;
+  color: #777;
+  font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+h3 {
+  font-size: 24px;
+  color: #444;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Crete Round', serif;
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  float: left;
+  margin-top: 32px;
+}
+
+header h1 .color {
+  color: #A4BE7B;
+}
+
+header nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+  float: none;
+}
+
+header nav ul li a {
+  color: #A4BE7B;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+  background-size: auto;
+}
+
+/*define spaces to about-me div element*/
+.about-me {
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.about-me h3 {
+  padding-top: 6%;
+  font-family: 'Crete Round', serif;
+}
+
+/*set max-width for the picture*/
+.about-me img {
+  max-width: 40%;
+  padding-bottom: 3%;
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*set proper position for content div*/
+.content {
+  text-align: center;
+  padding-top: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/*change heading color*/
+.content h4 {
+  padding-bottom: 3%;
+  color: #BE3737;
+}
+
+p {
+  font-size: 80%;
+  line-height: 2;
+}
+
+/*set proper position for bahrain div*/
+.bahrain {
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.bahrain h3 {
+  padding-top: 6%;
+  font-family: 'Crete Round', serif;
+}
+
+/*set max-width, padding , margin for the picture*/
+.bahrain img {
+  max-width: 50%;
+  padding-bottom: 3%;
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text p {
+  text-align: center;
+  padding-top: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.text p a {
+  color: #BE3737;
+}
+
+footer {
+  width: 100%;
+  display: inline-block;
+  padding-top: 10px;
+  background-color: #333;
+}
+
+.footer-info {
+  float: left;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  font-size: 0.7em;
+  line-height: 70px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0;
+}
+
+.email {
+  float: right;
+  width: 100%;
+}
+
+footer a {
+  float: left;
+  line-height: 70px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact {
+  background-color: #A4BE7B;
+}
+
+/* For tablets and laptops */
+@media only screen and (min-width : 768px) and (max-width : 1600px) {
+  header h1 {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 45px;
+    display: inline;
+    color: #444;
+  }
+
+  header nav {
+    background: none;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    text-align: right;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    display: inline;
+    padding: 3px;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .about-me {
+    padding-bottom: 15%;
+  }
+
+  /*set background color for the heading*/
+  .about-me h3 {
+    background-color: #E8DFCA;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  /*make image position left*/
+  .about-me img {
+    width: 35%;
+    float: left;
+    padding-left: 90px;
+    position: absolute;
+  }
+
+  .content {
+    padding-top: 5%;
+    padding-left: 40%;
+    padding-right: 10%;
+  }
+
+  /*increase font size*/
+  .content h4 {
+    padding-bottom: 3%;
+    color: #BE3737;
+    font-size: 25px;
+  }
+
+  .content p {
+    font-size: 15px;
+    line-height: 2.5;
+  }
+
+  /*set a background color for the heading*/
+  .bahrain h3 {
+    background-color: #E8DFCA;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  /*make image position left*/
+  .bahrain img {
+    width: 45%;
+    float: left;
+    padding-left: 90px;
+    position: absolute;
+    padding-bottom: 20%;
+  }
+
+  .text {
+    padding-left: 50%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+  }
+
+  .text p {
+    font-size: 15px;
+    line-height: 2.5;
+  }
+
+  footer {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .footer-info {
+    float: left;
+    width: 50%;
+  }
+
+  .email {
+    float: right;
+    width: 50%;
+  }
+}
+
+/* For large desktops and 4k screens */
+@media only screen and (min-width : 1601px) and (max-width : 2658px) {
+
+  /*increasing the font-size and padding bottom for most elements  */
+  header h1 {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 70px;
+    display: inline;
+    color: #444;
+    padding-top: 2%;
+  }
+
+  header nav {
+    background: none;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    text-align: right;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    display: inline;
+    padding: 3px;
+    font-size: 33px;
+    margin-right: 20px;
+  }
+
+  .about-me {
+    padding-bottom: 18%;
+  }
+
+  .about-me h3 {
+    background-color: #E8DFCA;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 46px;
+  }
+
+  .about-me img {
+    max-width: 35%;
+    float: left;
+    padding-left: 90px;
+    position: absolute;
+    padding-top: 7%;
+  }
+
+  .content {
+    padding-top: 5%;
+    padding-left: 40%;
+    padding-right: 10%;
+  }
+
+  .content h4 {
+    padding-bottom: 6%;
+    color: #BE3737;
+    font-size: 40px;
+  }
+
+  .content p {
+    font-size: 36px;
+    line-height: 2.5;
+  }
+
+  .bahrain {
+    padding-bottom: 10%;
+  }
+
+  .bahrain h3 {
+    background-color: #E8DFCA;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 46px;
+  }
+
+  .bahrain img {
+    max-width: 45%;
+    float: left;
+    padding-left: 90px;
+    position: absolute;
+    padding-bottom: 20%;
+    padding-top: 7%;
+  }
+
+  .text {
+    padding-left: 50%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+  }
+
+  .text p {
+    font-size: 36px;
+    line-height: 2.5;
+  }
+
+  footer {
+    width: 100%;
+    padding-top: 0;
+    font-size: 44px;
+    line-height: 100px;
+  }
+
+  .footer-info {
+    float: left;
+    width: 50%;
+  }
+
+  .email {
+    float: right;
+    width: 50%;
+  }
+}

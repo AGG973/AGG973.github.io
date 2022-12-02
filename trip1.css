@@ -1,0 +1,410 @@
+/*to set the page into mobile view (same as the index page)*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%
+}
+
+body {
+  background-color: #fff;
+  color: #777;
+  font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+/*defining div elements to same values*/
+h2 {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #BE3737;
+}
+
+h3 {
+  font-size: 24px;
+  color: #444;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*controlling img size and center*/
+img {
+  max-width: 50%;
+  padding-bottom: 3%;
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20%;
+}
+
+p {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 9%;
+  padding-left: 15%;
+  padding-right: 15%;
+  line-height: 1.5;
+  font-size: 80%;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Crete Round', serif;
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  float: left;
+  margin-top: 32px;
+}
+
+header h1 .color {
+  color: #A4BE7B;
+}
+
+header nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+  float: none;
+}
+
+header nav ul li a {
+  color: #A4BE7B;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+  background-size: auto;
+}
+
+/*make the background video fit*/
+video {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+/*arrange video position*/
+.video-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-bottom: 10%;
+}
+
+/*make text visible on the video*/
+.title {
+  position: relative;
+  color: black;
+  margin-bottom: 6%;
+  font-family: 'Crete Round', serif;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  display: inline-block;
+  padding-top: 10px;
+  background-color: #333;
+}
+
+.footer-info {
+  float: left;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  font-size: 0.7em;
+  line-height: 70px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0;
+}
+
+.email {
+  float: right;
+  width: 100%;
+}
+
+footer a {
+  float: left;
+  line-height: 70px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact {
+  background-color: #A4BE7B;
+}
+
+/* For tablets and laptops */
+@media only screen and (min-width : 768px) and (max-width : 1600px) {
+  header h1 {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 45px;
+    display: inline;
+    color: #444;
+  }
+
+  header nav {
+    background: none;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    text-align: right;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    display: inline;
+    padding: 3px;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .video-wrapper {
+    margin-top: 3%;
+  }
+
+  img {
+    border-radius: 30%;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 2.5;
+    padding-left: 50%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+
+  /*float images to left and set padding bottoms*/
+  .para-1 {
+    padding-bottom: 10%;
+  }
+
+  .para-1 img {
+    width: 40%;
+    float: left;
+    padding-left: 90px;
+    position: relative;
+  }
+
+  .para-2 {
+    padding-bottom: 10%;
+  }
+
+  .para-2 img {
+    width: 40%;
+    float: left;
+    padding-left: 90px;
+    position: relative;
+  }
+
+  .para-3 {
+    padding-bottom: 10%;
+  }
+
+  .para-3 img {
+    width: 40%;
+    float: left;
+    padding-left: 90px;
+    position: relative;
+  }
+
+  .para-4 {
+    padding-bottom: 10%;
+  }
+
+  .para-4 img {
+    width: 40%;
+    float: left;
+    padding-left: 90px;
+    position: relative;
+  }
+
+  footer {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .footer-info {
+    float: left;
+    width: 50%;
+  }
+
+  .email {
+    float: right;
+    width: 50%;
+  }
+}
+
+/* For large desktops and 4k screens */
+@media only screen and (min-width : 1601px) and (max-width : 2560px) {
+
+  /*increasing the font-size and padding bottom for most elements  */
+  h2 {
+    font-size: 40px;
+  }
+
+  header h1 {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 70px;
+    display: inline;
+    color: #444;
+    padding-top: 2%;
+  }
+
+  header nav {
+    background: none;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    text-align: right;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    display: inline;
+    padding: 3px;
+    font-size: 33px;
+    margin-right: 20px;
+  }
+
+  .video-wrapper {
+    margin-top: 3%;
+  }
+
+  .video-wrapper blockquote {
+    font-size: 20px;
+  }
+
+  img {
+    border-radius: 30%;
+  }
+
+  p {
+    font-size: 27px;
+    line-height: 2.5;
+    padding-left: 50%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+
+  .para-1 {
+    padding-bottom: 15%;
+  }
+
+  .para-1 img {
+    width: 40%;
+    float: left;
+    padding-left: 90px;
+    position: relative;
+  }
+
+  .para-2 {
+    padding-bottom: 15%;
+  }
+
+  .para-2 img {
+    width: 40%;
+    float: left;
+    padding-left: 90px;
+    position: relative;
+  }
+
+  .para-3 {
+    padding-bottom: 15%;
+  }
+
+  .para-3 img {
+    width: 40%;
+    float: left;
+    padding-left: 90px;
+    position: relative;
+  }
+
+  .para-4 {
+    padding-bottom: 15%;
+  }
+
+  .para-4 img {
+    width: 40%;
+    float: left;
+    padding-left: 90px;
+    position: relative;
+  }
+
+  footer {
+    width: 100%;
+    padding-top: 0;
+    font-size: 44px;
+    line-height: 100px;
+  }
+
+  .footer-info {
+    float: left;
+    width: 50%;
+  }
+
+  .email {
+    float: right;
+    width: 50%;
+  }
+}
